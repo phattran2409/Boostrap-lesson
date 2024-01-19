@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style> 
+        .container {
+            background: #333;
+        }
+        .btn-group{
+            border: 1px solid red;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+        .btn-group:hover > .dropdown-menu{
+            display: block;
+        }
+        .col {
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body> 
+    <div class="container" >
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+        <label class="btn btn-outline-primary" for="btncheck1">First One</label>
+    
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
+        <label class="btn btn-outline-primary" for="btncheck2">Second One</label>
+    
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+        <label class="btn btn-outline-primary" for="btncheck3">Third One</label>
+    </div>
+    
+
+    <div class="btn-group" role="group" aria-label="">
+        <button type="button" class="btn btn-secondary">First One</button>
+        <button type="button" class="btn btn-secondary">Second One</button>
+        <div class="btn-group btn-more" role="group">
+            <button id="dropdownId" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                More
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">First Dropdown</a>
+                <a class="dropdown-item" href="#">Second Dropdown</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-sm">
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-6">Column</div>
+            <div class="col-4">Column</div>
+            <div class="col-2">Column</div>
+        </div>
+    
+    </div>
+    
+    
+    
+</body>
+</html>
